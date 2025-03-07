@@ -1,241 +1,233 @@
-import {
-  ClevertechLogo,
-  ConsultlyLogo,
-  JojoMobileLogo,
-  MonitoLogo,
-  NSNLogo,
-  ParabolLogo,
-} from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
+  name: "Yerkebulan Tazabek",
+  initials: "YT",
+  location: "Astana, Kazakhstan",
+  locationLink: "https://www.google.com/maps/place/Astana/@51.1038954,71.1719489,10z/data=!3m1!4b1!4m6!3m5!1s0x424580c47db54609:0x97f9148dddb19228!8m2!3d51.1655126!4d71.4272221!16zL20vMGZuMDg?entry=ttu",
   about:
-    "Detail-oriented Full Stack Engineer dedicated to building high-quality products.",
+    "Sophomore mining engineering student passionate about geological data analysis and mineral exploration.",
   summary: (
     <>
-      Frontend-focused Full Stack Engineer specializing in high-performance
-      React applications, scalable Node.js services, and real-time collaboration
-      systems. Experienced in technical architecture design and remote team
-      leadership.
+      Sophomore mining engineering student with a minor in geology at Nazarbayev University, experienced in core logging, geological mapping, and fieldwork. Skilled in geological data analysis using Python and machine learning, with a focus on mineral exploration and real-time detection systems.
     </>
   ),
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+  avatarUrl: "https://avatars.githubusercontent.com/u/151542580?v=4",
+  personalWebsiteUrl: null, // You didn’t provide one; set to null or add if you have one
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "yerkebulan.tazabek@nu.edu.kz",
+    tel: "+77023476701",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/yerkebulat",
         icon: GitHubIcon,
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/yerkebulan-tazabek/",
         icon: LinkedInIcon,
       },
-      {
-        name: "X",
-        url: "https://x.com/BartoszJarocki",
-        icon: XIcon,
-      },
+      // Add X if you have it, otherwise omit or leave as placeholder
+      // {
+      //   name: "X",
+      //   url: "https://x.com/yourhandle",
+      //   icon: XIcon,
+      // },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "Nazarbayev University",
+      degree: "B.Sc. in Mining Engineering (GPA: 3.42/4), Minor in Geology",
+      start: "2023",
+      end: "2027",
+    },
+    {
+      school: "Nazarbayev Intellectual School",
+      degree: "High School Diploma (GPA: 4.98/5)",
+      start: "2017",
+      end: "2023",
     },
   ],
   work: [
     {
-      company: "Film.io",
-      link: "https://film.io",
-      badges: ["Remote", "React", "Next.js", "TypeScript", "Node.js"],
-      title: "Software Architect",
-      logo: ConsultlyLogo,
+      company: "SmartView Innovations (Startup)",
+      link: "https://digitalbusiness.kz/2024-10-10/droni-zoloto-i-iskusstvenniy-intellekt-kak-startap-smartview-innovations-zavoevivaet-dobivayushchuyu-promishlennost/",
+      badges: ["Part-time", "Python", "YOLO", "AI", "Drones"],
+      title: "Member of Technical Staff",
+      logo: null, // No logo provided; leave as null or import one if you have it
       start: "2024",
-      end: null,
+      end: null, // Ongoing
       description: (
         <>
-          Leading technical architecture of a blockchain-based film funding
-          platform.
+          Contributing to AI-driven solutions for the mining sector.
           <ul className="list-inside list-disc">
             <li>
-              Architecting migration from CRA to Next.js for improved
-              performance, SEO, and DX
+              Fine-tuning YOLO Worldv8 models for real-time object detection, focusing on data labeling and hyperparameter optimization.
             </li>
             <li>
-              Established release process enabling faster deployments and
-              reliable rollbacks
-            </li>
-            <li>
-              Implementing system-wide monitoring and security improvements
+              Working on a drone detection project with Brandt LLC (1.4M tenge monthly contract), reducing wobbler inspection time from 4 hours to 20 minutes with 98.1% accuracy.
             </li>
           </ul>
         </>
       ),
     },
     {
-      company: "Parabol",
-      link: "https://parabol.co",
-      badges: [
-        "Remote",
-        "React",
-        "TypeScript",
-        "Node.js",
-        "GraphQL",
-        "Tailwind CSS",
-      ],
-      title: "Senior Full Stack Developer",
-      logo: ParabolLogo,
-      start: "2021",
+      company: "Nazarbayev University",
+      link: "https://scholar.google.com/citations?hl=en&user=MghExQgAAAAJ&view_op=list_works",
+      badges: ["Part-time", "Python", "Machine Learning", "PyTorch", "Research"],
+      title: "Research Assistant",
+      logo: null,
+      start: "2024",
       end: "2024",
       description: (
         <>
-          Senior developer and squad leader for an enterprise agile meeting
-          platform.
+          Conducted research under Prof. Nasser Madani on mineral resource estimation.
           <ul className="list-inside list-disc">
             <li>
-              Built design system with Tailwind CSS, improving development speed
-              and time to market
+              Developed machine learning regression models and neural networks using scikit-learn and PyTorch, managing a dataset of 1,000,000 labeled data points.
             </li>
             <li>
-              Implemented engineering practices: PR automation, code review
-              guidelines, and workflows
-            </li>
-            <li>
-              Open source contributions to Relay DevTools and React i18n tooling
+              Achieved 88.25% accuracy in predictions, surpassing conventional methods by 20-25%, with data visualization using Matplotlib.
             </li>
           </ul>
         </>
       ),
     },
     {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote", "React", "TypeScript", "Node.js", "Android", "Kotlin"],
-      title: "Lead Android Developer → Full Stack Developer",
-      logo: ClevertechLogo,
-      start: "2015",
-      end: "2021",
+      company: "Qazaqstan Geography Olympiad (QazGO)",
+      link: "https://www.gov.kz/memleket/entities/edu/press/news/details/833353?lang=ru",
+      badges: ["Volunteer", "Geology", "Education", "Coaching"],
+      title: "National Team Coach",
+      logo: null,
+      start: "2023",
+      end: null, // Ongoing
       description: (
         <>
-          Successfully transitioned from mobile to full-stack development while
-          leading distributed teams.
+          Volunteer coach enhancing geography education nationwide.
           <ul className="list-inside list-disc">
             <li>
-              Led frontend team at Evercast, building real-time platform
-              supporting 30+ users per room with HD streaming and collaboration
-              tools
+              Created 75 unique tasks for municipal, regional, and national olympiads in geology, geomorphology, demographics, and urban studies.
             </li>
             <li>
-              Developed offline-first Android app for DKMS, improving donor
-              registration process
+              Conducted nine 3-week educational camps, training over 210 students.
             </li>
             <li>
-              Led development teams across multiple successful client projects
+              Grew participation from 100,000 in 2023 to 136,000 in 2024; students won 3 bronze and 1 silver medal at IGeO Dublin 2024.
             </li>
           </ul>
         </>
       ),
     },
     {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: ["On Site", "Android", "Java", "Kotlin"],
-      title: "Android Developer → Lead Android Developer",
-      logo: JojoMobileLogo,
-      start: "2012",
-      end: "2015",
+      company: "National Geographic Qazaqstan",
+      link: "https://nationalgeographic.kz",
+      badges: ["Internship", "Translation", "Photoshop"],
+      title: "Translator",
+      logo: null,
+      start: "2021",
+      end: "2023",
       description: (
         <>
-          First Android developer, grew and led a team of 15+ engineers while
-          establishing engineering culture.
+          Translated and edited content for National Geographic’s Kazakh edition.
           <ul className="list-inside list-disc">
             <li>
-              Developed apps for major Polish companies including LOT, Polskie
-              Radio, and Agora
+              Published 25 articles in Kazakh, reaching 14,000+ online readers, focusing on technical and space innovations.
             </li>
-            <li>Built and mentored high-performing mobile development team</li>
+            <li>
+              Used Adobe Photoshop for photo translation and edited 11 contributed articles.
+            </li>
           </ul>
         </>
       ),
-    },
-    {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: ["On Site", "C/C++", "LTE", "Agile"],
-      title: "C/C++ Developer",
-      logo: NSNLogo,
-      start: "2010",
-      end: "2012",
-      description:
-        "Developed software for LTE base stations at enterprise scale, gaining strong fundamentals in software architecture, testing practices, and cross-team collaboration.",
     },
   ],
   skills: [
-    "React/Next.js/Remix",
-    "TypeScript",
-    "Tailwind CSS",
-    "Design Systems",
-    "WebRTC",
-    "WebSockets",
-    "Node.js",
-    "GraphQL",
-    "Relay",
-    "System Architecture",
-    "Remote Team Leadership",
+    "Python (NumPy, pandas, scikit-learn, Matplotlib, PyTorch, OpenCV)",
+    "R",
+    "HTML",
+    "Next.js",
+    "GitHub",
+    "VS Code",
+    "LaTeX",
+    "SolidWorks",
+    "Adobe Photoshop",
+    "After Effects",
   ],
   projects: [
     {
-      title: "Monito",
-      techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
+      title: "Drone Detection for Mining",
+      techStack: ["Python", "YOLO Worldv8", "AI", "Drones"],
       description:
-        "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
-      logo: MonitoLogo,
+        "Contributed to a SmartView Innovations project reducing wobbler inspection time from 4 hours to 20 minutes with 98.1% accuracy using AI-powered drone detection.",
+      logo: null,
       link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
+        label: "digitalbusiness.kz",
+        href: "https://digitalbusiness.kz/2024-10-10/droni-zoloto-i-iskusstvenniy-intellekt-kak-startap-smartview-innovations-zavoevivaet-dobivayushchuyu-promishlennost/",
       },
     },
     {
-      title: "Consultly",
-      techStack: [
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
-        "Tailwind CSS",
-        "PostgreSQL",
-        "Redis",
-      ],
+      title: "Mineral Resource Estimation Model",
+      techStack: ["Python", "scikit-learn", "PyTorch", "Matplotlib"],
       description:
-        "Platform for online consultations with real-time video meetings and scheduling",
-      logo: ConsultlyLogo,
+        "Developed ML regression models and neural networks for a Canada-Ontario mine case study, achieving 88.25% accuracy with a 1M-point dataset.",
+      logo: null,
       link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
+        label: "scholar.google.com",
+        href: "https://scholar.google.com/citations?hl=en&user=MghExQgAAAAJ&view_op=list_works",
       },
     },
     {
-      title: "Minimalist CV",
-      techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
+      title: "Geography Olympiad Tasks",
+      techStack: ["Geology", "Education"],
       description:
-        "An open source minimalist, print friendly CV template with a focus on readability and clean design. >9k stars on GitHub",
-      logo: MonitoLogo,
+        "Created 75 unique tasks for QazGO olympiads, enhancing geological and geographical education for over 210 students.",
+      logo: null,
       link: {
-        label: "Minimalist CV",
-        href: "https://github.com/BartoszJarocki/cv",
+        label: "gov.kz",
+        href: "https://www.gov.kz/memleket/entities/edu/press/news/details/833353?lang=ru",
       },
+    },
+  ],
+  awards: [ // Added as a custom field since your CV has this section
+    {
+      title: "International Geography Olympiad Istanbul 2021",
+      description: "Silver medalist (top 25 worldwide)",
+      link: {
+        label: "scoreboard.bc-pf.org",
+        href: "https://scoreboard.bc-pf.org/en/results/geography/international-geography-olympiad/2021",
+      },
+    },
+    {
+      title: "International Geography Olympiad Paris 2022",
+      description: "Bronze medalist",
+      link: null,
+    },
+    {
+      title: "International Earth Science Olympiad Aosta 2022",
+      description: "Bronze medalist",
+      link: null,
+    },
+    {
+      title: "European Geography Olympiad Belgrade 2021",
+      description: "Bronze medalist",
+      link: null,
+    },
+    {
+      title: "Kazakhstan National Geography Olympiad",
+      description: "Gold medalist (2021, 2021), Silver medalist (2020)",
+      link: null,
+    },
+    {
+      title: "Appreciation Letter from President of Kazakhstan",
+      description: "Awarded for contributions to educational competitions (Sep 2022)",
+      link: null,
+    },
+    {
+      title: "'El Maktanyshy' Academic Prize",
+      description: "Governmental prize, $4594 USD (Aug 2021)",
+      link: null,
     },
   ],
 } as const;
