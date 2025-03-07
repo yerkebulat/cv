@@ -13,7 +13,7 @@ export const RESUME_DATA = {
     </>
   ),
   avatarUrl: "https://avatars.githubusercontent.com/u/151542580?v=4",
-  personalWebsiteUrl: null, // You didn’t provide one; set to null or add if you have one
+  personalWebsiteUrl: undefined, // You didn’t provide one; set to null or add if you have one
   contact: {
     email: "yerkebulan.tazabek@nu.edu.kz",
     tel: "+77023476701",
