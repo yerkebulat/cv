@@ -122,7 +122,7 @@ export const RESUME_DATA = {
     },
     {
       company: "National Geographic Qazaqstan",
-      link: "https://nationalgeographic.kz",
+      link: "https://nationalgeographic.kz/2022/05/16/nazaryngyzgha-bizding-galaktikamyzdyng-kindigindegi-qara-qurdymnyng-alghashqy-bejnesi/",
       badges: ["Internship", "Translation", "Photoshop"],
       title: "Translator",
       logo: null,
