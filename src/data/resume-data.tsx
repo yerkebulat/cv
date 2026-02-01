@@ -1,22 +1,26 @@
-import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
   name: "Yerkebulan Tazabek",
   initials: "YT",
   location: "Astana, Kazakhstan",
-  locationLink: "https://www.google.com/maps/place/Astana/@51.1038954,71.1719489,10z/data=!3m1!4b1!4m6!3m5!1s0x424580c47db54609:0x97f9148dddb19228!8m2!3d51.1655126!4d71.4272221!16zL20vMGZuMDg?entry=ttu",
+  locationLink: "https://www.google.com/maps/place/Astana,+Kazakhstan",
   about:
-    "Sophomore mining engineering student passionate about geological data analysis and mineral exploration.",
+    "Junior mining engineering student with a minor in geology at Nazarbayev University. Experienced in core logging, geological mapping, geotechnical analysis, and fieldwork. Skilled in geological data analysis and passionate about mineral exploration.",
   summary: (
     <>
-      Sophomore mining engineering student with a minor in geology at Nazarbayev University, experienced in core logging, geological mapping, and fieldwork. Skilled in geological data analysis using Python and machine learning, with a focus on mineral exploration and real-time detection systems.
+      Junior mining engineering student with a minor in geology at Nazarbayev University.
+      Experienced in core logging, geological mapping, geotechnical analysis, and fieldwork.
+      Skilled in geological data analysis and passionate about mineral exploration.
+      Two-time winner of the International Geography Olympiad (equivalent to the IMO in geography)
+      and coach of the national geography team.
     </>
   ),
   avatarUrl: "https://avatars.githubusercontent.com/u/151542580?v=4",
-  personalWebsiteUrl: undefined, // You didn’t provide one; set to null or add if you have one
+  personalWebsiteUrl: "https://yerkebulan.dev",
   contact: {
     email: "yerkebulan.tazabek@nu.edu.kz",
-    tel: "+77023476701",
+    tel: "+7 702 347 6701",
     social: [
       {
         name: "GitHub",
@@ -28,93 +32,96 @@ export const RESUME_DATA = {
         url: "https://www.linkedin.com/in/yerkebulan-tazabek/",
         icon: LinkedInIcon,
       },
-      // Add X if you have it, otherwise omit or leave as placeholder
-      // {
-      //   name: "X",
-      //   url: "https://x.com/yourhandle",
-      //   icon: XIcon,
-      // },
     ],
   },
   education: [
     {
       school: "Nazarbayev University",
-      degree: "B.Sc. in Mining Engineering (GPA: 3.42/4), Minor in Geology",
+      degree: "B.Sc. in Mining Engineering (Minor in Geology, GPA: 3.55/4)",
       start: "2023",
       end: "2027",
-    },
-    {
-      school: "Nazarbayev Intellectual School",
-      degree: "High School Diploma (GPA: 4.98/5)",
-      start: "2017",
-      end: "2023",
     },
   ],
   work: [
     {
-      company: "SmartView Innovations (Startup)",
-      link: "https://digitalbusiness.kz/2024-10-10/droni-zoloto-i-iskusstvenniy-intellekt-kak-startap-smartview-innovations-zavoevivaet-dobivayushchuyu-promishlennost/",
-      badges: ["Part-time", "Python", "YOLO", "AI", "Drones"],
-      title: "Member of Technical Staff",
-      logo: null, // No logo provided; leave as null or import one if you have it
-      start: "2024",
-      end: null, // Ongoing
-      description: (
-        <>
-          Contributing to AI-driven solutions for the mining sector.
-          <ul className="list-inside list-disc">
-            <li>
-              Fine-tuning YOLO Worldv8 models for real-time object detection, focusing on data labeling and hyperparameter optimization.
-            </li>
-            <li>
-              Working on a drone detection project with Brandt LLC (1.4M tenge monthly contract), reducing wobbler inspection time from 4 hours to 20 minutes with 98.1% accuracy.
-            </li>
-          </ul>
-        </>
-      ),
-    },
-    {
       company: "Nazarbayev University",
-      link: "https://scholar.google.com/citations?hl=en&user=MghExQgAAAAJ&view_op=list_works",
-      badges: ["Part-time", "Python", "Machine Learning", "PyTorch", "Research"],
+      link: "https://nu.edu.kz",
+      badges: ["Part-time", "Research"],
       title: "Research Assistant",
       logo: null,
-      start: "2024",
-      end: "2024",
+      start: "2025-08",
+      end: null,
       description: (
         <>
-          Conducted research under Prof. Nasser Madani on mineral resource estimation.
           <ul className="list-inside list-disc">
             <li>
-              Developed machine learning regression models and neural networks using scikit-learn and PyTorch, managing a dataset of 1,000,000 labeled data points.
+              Working with Professor Milovan Fustic on Carboniferous–Devonian copper mineralization in the Chu-Sarysu Basin.
             </li>
             <li>
-              Achieved 88.25% accuracy in predictions, surpassing conventional methods by 20-25%, with data visualization using Matplotlib.
+              Responsible for paleogeographic reconstruction, fieldwork, sampling, thin-section analysis, and outcrop modeling.
             </li>
           </ul>
         </>
       ),
     },
     {
-      company: "Qazaqstan Geography Olympiad (QazGO)",
-      link: "https://www.gov.kz/memleket/entities/edu/press/news/details/833353?lang=ru",
-      badges: ["Volunteer", "Geology", "Education", "Coaching"],
-      title: "National Team Coach",
+      company: "First Quantum Minerals",
+      link: "https://www.first-quantum.com",
+      badges: ["Internship", "Field Geology"],
+      title: "Field Geologist",
       logo: null,
-      start: "2023",
-      end: null, // Ongoing
+      start: "2025-05",
+      end: "2025-12",
       description: (
         <>
-          Volunteer coach enhancing geography education nationwide.
           <ul className="list-inside list-disc">
             <li>
-              Created 75 unique tasks for municipal, regional, and national olympiads in geology, geomorphology, demographics, and urban studies.
+              Conducted geological core logging, orientation, pXRF analysis, photographing, magnetic susceptibility, core recovery calculations, alteration intervaling, and geological modeling in a world-class copper exploration project.
             </li>
             <li>
-              Conducted nine 3-week educational camps, training over 210 students.
+              Completed a 3-month summer and 1-month winter internship 60 km from the nearest village in remote field; responsible for facies modeling, paleontological core description, and Chu-Sarysu basin analysis.
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      company: "SmartView Innovations",
+      link: "https://digitalbusiness.kz/2024-10-10/droni-zoloto-i-iskusstvenniy-intellekt-kak-startap-smartview-innovations-zavoevivaet-dobivayushchuyu-promishlennost/",
+      badges: ["Part-time", "Startup", "Mining", "AI"],
+      title: "Member of Technical Staff",
+      logo: null,
+      start: "2024-10",
+      end: "2025-03",
+      description: (
+        <>
+          <ul className="list-inside list-disc">
+            <li>
+              Worked on fine-tuning YOLO Worldv8 models for mining sector applications, focusing on data labeling and hyperparameter optimization for real-time object detection.
             </li>
             <li>
-              Grew participation from 100,000 in 2023 to 136,000 in 2024; students won 3 bronze and 1 silver medal at IGeO Dublin 2024.
+              Contributed to a drone detection project with Brandt LLC (1.4M tenge monthly contract) that reduces wobbler inspection time from 4 hours to 20 minutes through AI-powered detection with 98.1% accuracy.
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      company: "Daryn RSPC",
+      link: "",
+      badges: ["Volunteering", "National Team Coach", "Jury"],
+      title: "National Team Coach & Jury",
+      logo: null,
+      start: "2023-02",
+      end: null,
+      description: (
+        <>
+          <ul className="list-inside list-disc">
+            <li>
+              Created 120 unique tasks for municipal, regional, and national geography olympiads, specializing in geology, geomorphology, demographics, and urban studies; juried at the Republican Olympiad in 2024 and 2025 with 50,000+ participants across all cycles.
+            </li>
+            <li>
+              Coached the national geography team; students achieved 2nd place in the team ranking at IGeo Bangkok 2025.
             </li>
           </ul>
         </>
@@ -122,21 +129,20 @@ export const RESUME_DATA = {
     },
     {
       company: "National Geographic Qazaqstan",
-      link: "https://nationalgeographic.kz/2022/05/16/nazaryngyzgha-bizding-galaktikamyzdyng-kindigindegi-qara-qurdymnyng-alghashqy-bejnesi/",
-      badges: ["Internship", "Translation", "Photoshop"],
+      link: "https://nationalgeographic.kz",
+      badges: ["Internship", "Translation"],
       title: "Translator",
       logo: null,
-      start: "2021",
-      end: "2023",
+      start: "2021-12",
+      end: "2023-01",
       description: (
         <>
-          Translated and edited content for National Geographic’s Kazakh edition.
           <ul className="list-inside list-disc">
             <li>
-              Published 25 articles in Kazakh, reaching 14,000+ online readers, focusing on technical and space innovations.
+              Published 25 National Geographic articles into the Kazakh language, reaching more than 14,000 online readers.
             </li>
             <li>
-              Used Adobe Photoshop for photo translation and edited 11 contributed articles.
+              Managed content on technical and space innovations and edited 11 articles contributed by others.
             </li>
           </ul>
         </>
@@ -144,90 +150,62 @@ export const RESUME_DATA = {
     },
   ],
   skills: [
-    "Python (NumPy, pandas, scikit-learn, Matplotlib, PyTorch, OpenCV)",
     "R",
     "HTML",
+    "Python (NumPy, pandas, scikit-learn, Matplotlib, PyTorch, OpenCV)",
     "Next.js",
-    "GitHub",
+    "TypeScript",
     "VS Code",
     "LaTeX",
     "SolidWorks",
-    "Adobe Photoshop",
     "After Effects",
+    "Adobe Photoshop",
+    "ArcGIS",
+    "Leapfrog Geo",
+    "QGIS",
+    "Pix4DMapper",
+    "Imago Seequent",
+    "LogChief",
+    "Reflex IQ-Logger",
   ],
-  projects: [
-    {
-      title: "Drone Detection for Mining",
-      techStack: ["Python", "YOLO Worldv8", "AI", "Drones"],
-      description:
-        "Contributed to a SmartView Innovations project reducing wobbler inspection time from 4 hours to 20 minutes with 98.1% accuracy using AI-powered drone detection.",
-      logo: null,
-      link: {
-        label: "digitalbusiness.kz",
-        href: "https://digitalbusiness.kz/2024-10-10/droni-zoloto-i-iskusstvenniy-intellekt-kak-startap-smartview-innovations-zavoevivaet-dobivayushchuyu-promishlennost/",
-      },
-    },
-    {
-      title: "Mineral Resource Estimation Model",
-      techStack: ["Python", "scikit-learn", "PyTorch", "Matplotlib"],
-      description:
-        "Developed ML regression models and neural networks for a Canada-Ontario mine case study, achieving 88.25% accuracy with a 1M-point dataset.",
-      logo: null,
-      link: {
-        label: "scholar.google.com",
-        href: "https://scholar.google.com/citations?hl=en&user=MghExQgAAAAJ&view_op=list_works",
-      },
-    },
-    {
-      title: "Geography Olympiad Tasks",
-      techStack: ["Geology", "Education"],
-      description:
-        "Created 75 unique tasks for QazGO olympiads, enhancing geological and geographical education for over 210 students.",
-      logo: null,
-      link: {
-        label: "gov.kz",
-        href: "https://www.gov.kz/memleket/entities/edu/press/news/details/833353?lang=ru",
-      },
-    },
-  ],
-  awards: [ // Added as a custom field since your CV has this section
+  awards: [
     {
       title: "International Geography Olympiad Istanbul 2021",
-      description: "Silver medalist (top 25 worldwide)",
-      link: {
-        label: "scoreboard.bc-pf.org",
-        href: "https://scoreboard.bc-pf.org/en/results/geography/international-geography-olympiad/2021",
-      },
+      award: "Silver medalist (top 25 worldwide)",
     },
     {
       title: "International Geography Olympiad Paris 2022",
-      description: "Bronze medalist",
-      link: null,
+      award: "Bronze medalist",
     },
     {
       title: "International Earth Science Olympiad Aosta 2022",
-      description: "Bronze medalist",
-      link: null,
+      award: "Bronze medalist",
     },
     {
       title: "European Geography Olympiad Belgrade 2021",
-      description: "Bronze medalist",
-      link: null,
+      award: "Bronze medalist",
     },
     {
-      title: "Kazakhstan National Geography Olympiad",
-      description: "Gold medalist (2021, 2021), Silver medalist (2020)",
-      link: null,
+      title: "Republican Geography Olympiad",
+      award: "Gold medalist - 2022, 2021 | Silver medalist - 2020",
     },
     {
-      title: "Appreciation Letter from President of Kazakhstan",
-      description: "Awarded for contributions to educational competitions (Sep 2022)",
-      link: null,
+      title: "KazMinerals Reacthon Hackathon 2025",
+      award: "First Place",
     },
     {
-      title: "'El Maktanyshy' Academic Prize",
-      description: "Governmental prize, $4594 USD (Aug 2021)",
-      link: null,
+      title: "Presidential Appreciation Letter",
+      award: "Letter by the President of the Republic of Kazakhstan for exceptional achievement (Sep 2022)",
+    },
+    {
+      title: "El Maktanyshy",
+      award: "Governmental academic prize - $4594 (Aug 2022)",
     },
   ],
+  projects: [] as {
+    title: string;
+    description: string;
+    techStack: readonly string[];
+    link?: { href: string };
+  }[],
 } as const;
