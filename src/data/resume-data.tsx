@@ -6,16 +6,7 @@ export const RESUME_DATA = {
   location: "Astana, Kazakhstan",
   locationLink: "https://www.google.com/maps/place/Astana,+Kazakhstan",
   about:
-    "Junior mining engineering student with a minor in geology at Nazarbayev University. Experienced in core logging, geological mapping, geotechnical analysis, and fieldwork. Skilled in geological data analysis and passionate about mineral exploration.",
-  summary: (
-    <>
-      Junior mining engineering student with a minor in geology at Nazarbayev University.
-      Experienced in core logging, geological mapping, geotechnical analysis, and fieldwork.
-      Skilled in geological data analysis and passionate about mineral exploration.
-      Two-time winner of the International Geography Olympiad (equivalent to the IMO in geography)
-      and coach of the national geography team.
-    </>
-  ),
+    "Junior mining engineering student with a minor in geology at Nazarbayev University. Experienced in core logging, geological mapping, geotechnical analysis, and fieldwork. Skilled in geological data analysis and passionate about mineral exploration. Two-time winner of the International Geography Olympiad (equivalent to the IMO in geography) and coach of the national geography team.",
   avatarUrl: "https://avatars.githubusercontent.com/u/151542580?v=4",
   personalWebsiteUrl: "https://yerkebulan.dev",
   contact: {
