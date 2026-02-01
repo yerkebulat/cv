@@ -170,36 +170,36 @@ export const RESUME_DATA = {
   ],
   awards: [
     {
-      title: "International Geography Olympiad Istanbul 2021",
-      award: "Silver medalist (top 25 worldwide)",
+      title: "International Geography Olympiad",
+      award: "Silver medal, Istanbul 2021",
     },
     {
-      title: "International Geography Olympiad Paris 2022",
-      award: "Bronze medalist",
+      title: "International Geography Olympiad",
+      award: "Bronze medal, Paris 2022",
     },
     {
-      title: "International Earth Science Olympiad Aosta 2022",
-      award: "Bronze medalist",
+      title: "International Earth Science Olympiad",
+      award: "Bronze medal, Aosta 2022",
     },
     {
-      title: "European Geography Olympiad Belgrade 2021",
-      award: "Bronze medalist",
+      title: "European Geography Olympiad",
+      award: "Bronze medal, Belgrade 2021",
     },
     {
       title: "Republican Geography Olympiad",
-      award: "Gold medalist - 2022, 2021 | Silver medalist - 2020",
+      award: "Gold 2022, 2021 | Silver 2020",
     },
     {
-      title: "KazMinerals Reacthon Hackathon 2025",
-      award: "First Place",
+      title: "KazMinerals Reacthon Hackathon",
+      award: "1st Place, 2025",
     },
     {
       title: "Presidential Appreciation Letter",
-      award: "Letter by the President of the Republic of Kazakhstan for exceptional achievement (Sep 2022)",
+      award: "Sep 2022",
     },
     {
-      title: "El Maktanyshy",
-      award: "Governmental academic prize - $4594 (Aug 2022)",
+      title: "El Maktanyshy Prize",
+      award: "$4594, Aug 2022",
     },
   ],
   projects: [] as {
