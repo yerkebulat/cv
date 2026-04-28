@@ -1,8 +1,8 @@
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
-import { RESUME_DATA } from "@/data/resume-data";
+import type { ResumeData, ResumeLabels } from "@/data/resume-data";
 
-type Award = (typeof RESUME_DATA)["awards"][number];
+type Award = ResumeData["awards"][number];
 
 interface AwardItemProps {
   award: Award;
@@ -17,9 +17,9 @@ function AwardItem({ award }: AwardItemProps) {
   return (
     <Card>
       <CardHeader>
-        <h3 className="font-semibold leading-none text-sm">{title}</h3>
+        <h3 className="text-sm font-semibold leading-none">{title}</h3>
       </CardHeader>
-      <CardContent className="mt-1 text-foreground/80 text-xs print:text-[11px]">
+      <CardContent className="mt-1 text-xs text-foreground/80 print:text-[11px]">
         {awardDescription}
       </CardContent>
     </Card>
@@ -28,27 +28,28 @@ function AwardItem({ award }: AwardItemProps) {
 
 interface AwardsListProps {
   awards: readonly Award[];
+  labels: ResumeLabels;
 }
 
 /**
  * Main awards section component
  * Renders a list of awards and achievements
  */
-export function Awards({ awards }: AwardsListProps) {
+export function Awards({ awards, labels }: AwardsListProps) {
   if (!awards || awards.length === 0) return null;
 
   return (
     <Section>
       <h2 className="text-xl font-bold" id="awards-section">
-        Awards & Achievements
+        {labels.sections.awards}
       </h2>
       <div
-        className="grid grid-cols-1 gap-3 md:grid-cols-2 print:grid-cols-2 print:gap-2"
+        className="grid grid-cols-1 gap-3 print:grid-cols-2 print:gap-2 md:grid-cols-2"
         role="feed"
         aria-labelledby="awards-section"
       >
         {awards.map((item) => (
-          <article key={item.title} role="article">
+          <article key={`${item.title}-${item.award}`} role="article">
             <AwardItem award={item} />
           </article>
         ))}

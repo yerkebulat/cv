@@ -1,22 +1,23 @@
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
-import { RESUME_DATA } from "@/data/resume-data";
+import type { ResumeData, ResumeLabels } from "@/data/resume-data";
 
-type Education = (typeof RESUME_DATA)["education"][number];
+type Education = ResumeData["education"][number];
 
 interface EducationPeriodProps {
   start: Education["start"];
   end: Education["end"];
+  labels: ResumeLabels;
 }
 
 /**
  * Displays the education period in a consistent format
  */
-function EducationPeriod({ start, end }: EducationPeriodProps) {
+function EducationPeriod({ start, end, labels }: EducationPeriodProps) {
   return (
     <div
-      className="text-sm tabular-nums text-gray-500"
-      aria-label={`Period: ${start} to ${end}`}
+      className="whitespace-nowrap text-sm tabular-nums text-gray-500"
+      aria-label={`${labels.period}: ${start} ${labels.to} ${end}`}
     >
       {start} - {end}
     </div>
@@ -25,12 +26,13 @@ function EducationPeriod({ start, end }: EducationPeriodProps) {
 
 interface EducationItemProps {
   education: Education;
+  labels: ResumeLabels;
 }
 
 /**
  * Individual education card component
  */
-function EducationItem({ education }: EducationItemProps) {
+function EducationItem({ education, labels }: EducationItemProps) {
   const { school, start, end, degree } = education;
 
   return (
@@ -43,7 +45,7 @@ function EducationItem({ education }: EducationItemProps) {
           >
             {school}
           </h3>
-          <EducationPeriod start={start} end={end} />
+          <EducationPeriod start={start} end={end} labels={labels} />
         </div>
       </CardHeader>
       <CardContent
@@ -60,17 +62,18 @@ function EducationItem({ education }: EducationItemProps) {
 
 interface EducationListProps {
   education: readonly Education[];
+  labels: ResumeLabels;
 }
 
 /**
  * Main education section component
  * Renders a list of education experiences
  */
-export function Education({ education }: EducationListProps) {
+export function Education({ education, labels }: EducationListProps) {
   return (
     <Section>
       <h2 className="text-xl font-bold" id="education-section">
-        Education
+        {labels.sections.education}
       </h2>
       <div
         className="space-y-4"
@@ -79,7 +82,7 @@ export function Education({ education }: EducationListProps) {
       >
         {education.map((item) => (
           <article key={item.school} role="article">
-            <EducationItem education={item} />
+            <EducationItem education={item} labels={labels} />
           </article>
         ))}
       </div>

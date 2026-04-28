@@ -7,19 +7,20 @@ import {
   CardContent,
 } from "../../components/ui/card";
 import { Section } from "../../components/ui/section";
-import { RESUME_DATA } from "../../data/resume-data";
+import type { ResumeData, ResumeLabels } from "../../data/resume-data";
 
-type ProjectTags = readonly string[];
+type ProjectTags = ResumeData["projects"][number]["techStack"];
 
 interface ProjectLinkProps {
   title: string;
   link?: string;
+  labels: ResumeLabels;
 }
 
 /**
  * Renders project title with optional link and status indicator
  */
-function ProjectLink({ title, link }: ProjectLinkProps) {
+function ProjectLink({ title, link, labels }: ProjectLinkProps) {
   if (!link) {
     return <span>{title}</span>;
   }
@@ -36,7 +37,7 @@ function ProjectLink({ title, link }: ProjectLinkProps) {
         {title}
         <span
           className="size-1 rounded-full bg-green-500"
-          aria-label="Active project indicator"
+          aria-label={labels.activeProject}
         />
       </a>
       <div
@@ -51,18 +52,19 @@ function ProjectLink({ title, link }: ProjectLinkProps) {
 
 interface ProjectTagsProps {
   tags: ProjectTags;
+  labels: ResumeLabels;
 }
 
 /**
  * Renders a list of technology tags used in the project
  */
-function ProjectTags({ tags }: ProjectTagsProps) {
+function ProjectTags({ tags, labels }: ProjectTagsProps) {
   if (tags.length === 0) return null;
 
   return (
     <ul
       className="mt-2 flex list-none flex-wrap gap-1 p-0"
-      aria-label="Technologies used"
+      aria-label={labels.tags}
     >
       {tags.map((tag) => (
         <li key={tag}>
@@ -83,12 +85,19 @@ interface ProjectCardProps {
   description: string;
   tags: ProjectTags;
   link?: string;
+  labels: ResumeLabels;
 }
 
 /**
  * Card component displaying project information
  */
-function ProjectCard({ title, description, tags, link }: ProjectCardProps) {
+function ProjectCard({
+  title,
+  description,
+  tags,
+  link,
+  labels,
+}: ProjectCardProps) {
   return (
     <Card
       className="flex h-full flex-col overflow-hidden border p-3"
@@ -97,37 +106,38 @@ function ProjectCard({ title, description, tags, link }: ProjectCardProps) {
       <CardHeader>
         <div className="space-y-1">
           <CardTitle className="text-base">
-            <ProjectLink title={title} link={link} />
+            <ProjectLink title={title} link={link} labels={labels} />
           </CardTitle>
           <CardDescription
             className="text-pretty font-mono text-xs print:text-[10px]"
-            aria-label="Project description"
+            aria-label={labels.projectDescription}
           >
             {description}
           </CardDescription>
         </div>
       </CardHeader>
       <CardContent className="mt-auto flex">
-        <ProjectTags tags={tags} />
+        <ProjectTags tags={tags} labels={labels} />
       </CardContent>
     </Card>
   );
 }
 
 interface ProjectsProps {
-  projects: (typeof RESUME_DATA)["projects"];
+  projects: ResumeData["projects"];
+  labels: ResumeLabels;
 }
 
 /**
  * Section component displaying all side projects
  */
-export function Projects({ projects }: ProjectsProps) {
+export function Projects({ projects, labels }: ProjectsProps) {
   if (!projects || projects.length === 0) return null;
 
   return (
     <Section className="print-force-new-page scroll-mb-16 print:space-y-4 print:pt-12">
       <h2 className="text-xl font-bold" id="side-projects">
-        Side projects
+        {labels.sections.projects}
       </h2>
       <div
         className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3"
@@ -144,6 +154,7 @@ export function Projects({ projects }: ProjectsProps) {
               description={project.description}
               tags={project.techStack}
               link={project.link?.href}
+              labels={labels}
             />
           </article>
         ))}
