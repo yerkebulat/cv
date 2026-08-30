@@ -100,7 +100,7 @@ export const RESUME_DATA: ResumeData = {
   location: "Astana, Kazakhstan",
   locationLink: "https://www.google.com/maps/place/Astana,+Kazakhstan",
   about:
-    "Senior mining engineering student with a minor in geology at Nazarbayev University. Experienced in core logging, geological mapping, geotechnical analysis, and fieldwork. Skilled in geological data analysis and passionate about mineral exploration. Two-time winner of IGeo (silver, Istanbul 2021; bronze, Paris 2022) and coach of the national geography team.",
+    "Senior mining engineering student with a minor in geology at Nazarbayev University. Experienced in core logging, geological mapping, geotechnical analysis, and fieldwork. Skilled in geological data analysis and passionate about mineral exploration. Two-time winner of IGeo and coach of the national geography team.",
   avatarUrl: "https://avatars.githubusercontent.com/u/151542580?v=4",
   personalWebsiteUrl: "https://yerkebulan.dev",
   contact: {
@@ -349,7 +349,7 @@ export const LOCALIZED_RESUME_DATA = {
     ...RESUME_DATA,
     location: "Астана, Қазақстан",
     about:
-      "Назарбаев Университетінде тау-кен инженериясын оқитын, геология бойынша миноры бар 4-курс студентімін. Керн сипаттау, геологиялық картаға түсіру, геотехникалық талдау және далалық жұмыстар бойынша тәжірибем бар. Геологиялық деректерді талдауға дағдыланғанмын және пайдалы қазбаларды барлауға қызығамын. IGeo-ның екі мәрте жүлдегерімін (күміс, Стамбұл 2021; қола, Париж 2022) және ұлттық география құрамасының жаттықтырушысымын.",
+      "Назарбаев Университетінде тау-кен инженериясын оқитын, геология бойынша миноры бар 4-курс студентімін. Керн сипаттау, геологиялық картаға түсіру, геотехникалық талдау және далалық жұмыстар бойынша тәжірибем бар. Геологиялық деректерді талдауға дағдыланғанмын және пайдалы қазбаларды барлауға қызығамын. IGeo-ның екі мәрте жүлдегерімін және ұлттық география құрамасының жаттықтырушысымын.",
     education: [
       {
         school: "Назарбаев Университеті",
@@ -522,7 +522,7 @@ export const LOCALIZED_RESUME_DATA = {
     ...RESUME_DATA,
     location: "Астана, Казахстан",
     about:
-      "Студент четвертого курса программы B.Sc. по горному делу с minor по геологии в Назарбаев Университете. Имею опыт описания керна, геологического картирования, геотехнического анализа и полевых работ. Уверенно работаю с геологическими данными и интересуюсь разведкой полезных ископаемых. Двукратный победитель IGeo (серебро, Стамбул 2021; бронза, Париж 2022) и тренер национальной сборной по географии.",
+      "Студент четвертого курса программы B.Sc. по горному делу с minor по геологии в Назарбаев Университете. Имею опыт описания керна, геологического картирования, геотехнического анализа и полевых работ. Уверенно работаю с геологическими данными и интересуюсь разведкой полезных ископаемых. Двукратный победитель IGeo и тренер национальной сборной по географии.",
     education: [
       {
         school: "Назарбаев Университет",
