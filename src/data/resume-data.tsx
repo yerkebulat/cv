@@ -176,7 +176,7 @@ export const RESUME_DATA: ResumeData = {
       title: "Field Geologist",
       logo: null,
       start: "2025-05",
-      end: "2025-12",
+      end: "2026-08",
       description: (
         <>
           <ul className="list-inside list-disc">
@@ -187,9 +187,9 @@ export const RESUME_DATA: ResumeData = {
               world-class copper exploration project.
             </li>
             <li>
-              Two separate internships (3-month summer and 1-month winter),
-              60 km from the nearest village; facies modeling, paleontological
-              core description, and Chu-Sarysu basin analysis.
+              Two 3-month summer internships (2025 and 2026) and a 1-month winter
+              internship, 300 km from the nearest city; facies modeling,
+              paleontological core description, and Chu-Sarysu basin analysis.
             </li>
           </ul>
         </>
@@ -393,10 +393,10 @@ export const LOCALIZED_RESUME_DATA = {
               белгілеу және геологиялық модельдеу жұмыстарын жүргіздім.
             </li>
             <li>
-              Ең жақын ауылдан 60 км қашықтағы шалғай далада 3 айлық жазғы және
-              1 айлық қысқы тағылымдаманы аяқтадым; фациялық модельдеу,
-              палеонтологиялық керн сипаттамасы және Шу-Сарысу бассейнін
-              талдауға жауапты болдым.
+              Шалғай далада (ең жақын қаладан 300 км) екі 3 айлық жазғы тағылымдама
+              (2025 және 2026) және 1 айлық қысқы тағылымдама; фациялық
+              модельдеу, палеонтологиялық керн сипаттамасы және Шу-Сарысу
+              бассейнін талдау.
             </li>
           </ul>
         ),
@@ -556,8 +556,8 @@ export const LOCALIZED_RESUME_DATA = {
               мирового класса.
             </li>
             <li>
-              Прошел 3-месячную летнюю и 1-месячную зимнюю стажировки в
-              удаленном полевом лагере в 60 км от ближайшего поселка; отвечал за
+              Две 3-месячные летние стажировки (2025 и 2026) и одна месячная зимняя
+              в удаленном полевом лагере в 300 км от ближайшего города;
               фациальное моделирование, палеонтологическое описание керна и
               анализ Шу-Сарысуйского бассейна.
             </li>
