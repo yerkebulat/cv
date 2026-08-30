@@ -17,9 +17,6 @@ interface ProjectLinkProps {
   labels: ResumeLabels;
 }
 
-/**
- * Renders project title with optional link and status indicator
- */
 function ProjectLink({ title, link, labels }: ProjectLinkProps) {
   if (!link) {
     return <span>{title}</span>;
@@ -32,7 +29,7 @@ function ProjectLink({ title, link, labels }: ProjectLinkProps) {
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center gap-1 hover:underline"
-        aria-label={`${title} project (opens in new tab)`}
+        aria-label={`${title} live site (opens in new tab)`}
       >
         {title}
         <span
@@ -44,7 +41,7 @@ function ProjectLink({ title, link, labels }: ProjectLinkProps) {
         className="hidden font-mono text-xs underline print:visible"
         aria-hidden="true"
       >
-        {link.replace("https://", "").replace("www.", "").replace("/", "")}
+        {link.replace("https://", "").replace("www.", "").replace(/\/$/, "")}
       </div>
     </>
   );
@@ -55,9 +52,6 @@ interface ProjectTagsProps {
   labels: ResumeLabels;
 }
 
-/**
- * Renders a list of technology tags used in the project
- */
 function ProjectTags({ tags, labels }: ProjectTagsProps) {
   if (tags.length === 0) return null;
 
@@ -85,17 +79,16 @@ interface ProjectCardProps {
   description: string;
   tags: ProjectTags;
   link?: string;
+  github?: string;
   labels: ResumeLabels;
 }
 
-/**
- * Card component displaying project information
- */
 function ProjectCard({
   title,
   description,
   tags,
   link,
+  github,
   labels,
 }: ProjectCardProps) {
   return (
@@ -112,7 +105,19 @@ function ProjectCard({
             className="text-pretty font-mono text-xs print:text-[10px]"
             aria-label={labels.projectDescription}
           >
-            {description}
+            {github ? (
+              <a
+                href={github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+                aria-label={`${title} GitHub repository (opens in new tab)`}
+              >
+                {description}
+              </a>
+            ) : (
+              description
+            )}
           </CardDescription>
         </div>
       </CardHeader>
@@ -128,9 +133,6 @@ interface ProjectsProps {
   labels: ResumeLabels;
 }
 
-/**
- * Section component displaying all side projects
- */
 export function Projects({ projects, labels }: ProjectsProps) {
   if (!projects || projects.length === 0) return null;
 
@@ -145,15 +147,13 @@ export function Projects({ projects, labels }: ProjectsProps) {
         aria-labelledby="side-projects"
       >
         {projects.map((project) => (
-          <article
-            key={project.title}
-            className="h-full" // Added h-full here
-          >
+          <article key={project.title} className="h-full">
             <ProjectCard
               title={project.title}
               description={project.description}
               tags={project.techStack}
               link={project.link?.href}
+              github={project.github?.href}
               labels={labels}
             />
           </article>

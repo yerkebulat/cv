@@ -90,6 +90,7 @@ export type ResumeData = {
     description: string;
     techStack: readonly string[];
     link?: { href: string };
+    github?: { href: string };
   }[];
 };
 
@@ -99,7 +100,7 @@ export const RESUME_DATA: ResumeData = {
   location: "Astana, Kazakhstan",
   locationLink: "https://www.google.com/maps/place/Astana,+Kazakhstan",
   about:
-    "Senior mining engineering student with a minor in geology at Nazarbayev University. Experienced in core logging, geological mapping, geotechnical analysis, and fieldwork. Skilled in geological data analysis and passionate about mineral exploration. iGeo silver (Istanbul 2021) and bronze (Paris 2022); coach of the national geography team.",
+    "Senior mining engineering student with a minor in geology at Nazarbayev University. Experienced in core logging, geological mapping, geotechnical analysis, and fieldwork. Skilled in geological data analysis and passionate about mineral exploration. Two-time winner of IGeo (silver, Istanbul 2021; bronze, Paris 2022) and coach of the national geography team.",
   avatarUrl: "https://avatars.githubusercontent.com/u/151542580?v=4",
   personalWebsiteUrl: "https://yerkebulan.dev",
   contact: {
@@ -336,7 +337,8 @@ export const RESUME_DATA: ResumeData = {
       description:
         "Web app of the Nicholas (1981) / UBC method-selection spreadsheet. Built for MINE 306 Underground Mining Systems and Design with Prof. Fidelis Suorineni. Ranks ten underground methods from deposit geometry and rock-mass inputs.",
       techStack: ["Next.js", "TypeScript", "Nicholas 1981"],
-      link: { href: "https://github.com/yerkebulat/ubc-mining-method-selector" },
+      link: { href: "https://yerkebulat.github.io/ubc-mining-method-selector/" },
+      github: { href: "https://github.com/yerkebulat/ubc-mining-method-selector" },
     },
   ],
 };
@@ -347,7 +349,7 @@ export const LOCALIZED_RESUME_DATA = {
     ...RESUME_DATA,
     location: "Астана, Қазақстан",
     about:
-      "Назарбаев Университетінде тау-кен инженериясын оқитын, геология бойынша миноры бар 4-курс студентімін. Керн сипаттау, геологиялық картаға түсіру, геотехникалық талдау және далалық жұмыстар бойынша тәжірибем бар. Геологиялық деректерді талдауға дағдыланғанмын және пайдалы қазбаларды барлауға қызығамын. iGeo күміс (Стамбұл 2021) және қола (Париж 2022); ұлттық география құрамасының жаттықтырушысымын.",
+      "Назарбаев Университетінде тау-кен инженериясын оқитын, геология бойынша миноры бар 4-курс студентімін. Керн сипаттау, геологиялық картаға түсіру, геотехникалық талдау және далалық жұмыстар бойынша тәжірибем бар. Геологиялық деректерді талдауға дағдыланғанмын және пайдалы қазбаларды барлауға қызығамын. IGeo-ның екі мәрте жүлдегерімін (күміс, Стамбұл 2021; қола, Париж 2022) және ұлттық география құрамасының жаттықтырушысымын.",
     education: [
       {
         school: "Назарбаев Университеті",
@@ -511,7 +513,8 @@ export const LOCALIZED_RESUME_DATA = {
         description:
           "Nicholas (1981) / UBC кен қазу әдісін таңдау кестесінің веб-қосымшасы. Prof. Fidelis Suorineni-мен MINE 306 Жерасты кен қазу жүйелері және жобалау курсында жасалды. Кен денесінің геометриясы мен тау жынысы бойынша 10 жерасты әдісін ранжирлейді.",
         techStack: ["Next.js", "TypeScript", "Nicholas 1981"],
-        link: { href: "https://github.com/yerkebulat/ubc-mining-method-selector" },
+        link: { href: "https://yerkebulat.github.io/ubc-mining-method-selector/" },
+      github: { href: "https://github.com/yerkebulat/ubc-mining-method-selector" },
       },
     ],
   },
@@ -519,7 +522,7 @@ export const LOCALIZED_RESUME_DATA = {
     ...RESUME_DATA,
     location: "Астана, Казахстан",
     about:
-      "Студент четвертого курса программы B.Sc. по горному делу с minor по геологии в Назарбаев Университете. Имею опыт описания керна, геологического картирования, геотехнического анализа и полевых работ. Уверенно работаю с геологическими данными и интересуюсь разведкой полезных ископаемых. Призер iGeo: серебро (Стамбул 2021) и бронза (Париж 2022); тренер национальной сборной по географии.",
+      "Студент четвертого курса программы B.Sc. по горному делу с minor по геологии в Назарбаев Университете. Имею опыт описания керна, геологического картирования, геотехнического анализа и полевых работ. Уверенно работаю с геологическими данными и интересуюсь разведкой полезных ископаемых. Двукратный победитель IGeo (серебро, Стамбул 2021; бронза, Париж 2022) и тренер национальной сборной по географии.",
     education: [
       {
         school: "Назарбаев Университет",
@@ -682,7 +685,8 @@ export const LOCALIZED_RESUME_DATA = {
         description:
           "Веб-приложение таблицы выбора метода Nicholas (1981) / UBC. Сделано в курсе MINE 306 Underground Mining Systems and Design у проф. Fidelis Suorineni. Ранжирует десять подземных методов по геометрии залежи и качеству массива.",
         techStack: ["Next.js", "TypeScript", "Nicholas 1981"],
-        link: { href: "https://github.com/yerkebulat/ubc-mining-method-selector" },
+        link: { href: "https://yerkebulat.github.io/ubc-mining-method-selector/" },
+      github: { href: "https://github.com/yerkebulat/ubc-mining-method-selector" },
       },
     ],
   },
