@@ -279,15 +279,22 @@ export const RESUME_DATA: ResumeData = {
     "VS Code",
     "LaTeX",
     "SolidWorks",
-    "After Effects",
-    "Adobe Photoshop",
-    "ArcGIS",
     "Leapfrog Geo",
+    "RS2",
+    "RS3",
+    "Micromine Beyond",
+    "Micromine Origin",
+    "Isatis.neo",
+    "Petrel",
+    "VentSim",
+    "ArcGIS",
     "QGIS",
     "Pix4DMapper",
     "Imago Seequent",
     "LogChief",
     "Reflex IQ-Logger",
+    "After Effects",
+    "Adobe Photoshop",
   ],
   awards: [
     {
@@ -323,12 +330,15 @@ export const RESUME_DATA: ResumeData = {
       award: "$4594, Aug 2022",
     },
   ],
-  projects: [] as {
-    title: string;
-    description: string;
-    techStack: readonly string[];
-    link?: { href: string };
-  }[],
+  projects: [
+    {
+      title: "UBC Mining Method Selector",
+      description:
+        "Web app of the Nicholas (1981) / UBC method-selection spreadsheet. Built for MINE 306 Underground Mining Systems and Design with Prof. Fidelis Suorineni. Ranks ten underground methods from deposit geometry and rock-mass inputs.",
+      techStack: ["Next.js", "TypeScript", "Nicholas 1981"],
+      link: { href: "https://github.com/yerkebulat/ubc-mining-method-selector" },
+    },
+  ],
 };
 
 export const LOCALIZED_RESUME_DATA = {
@@ -495,6 +505,15 @@ export const LOCALIZED_RESUME_DATA = {
         award: "$4594, тамыз 2022",
       },
     ],
+    projects: [
+      {
+        title: "UBC Mining Method Selector",
+        description:
+          "Nicholas (1981) / UBC кен қазу әдісін таңдау кестесінің веб-қосымшасы. Prof. Fidelis Suorineni-мен MINE 306 Жерасты кен қазу жүйелері және жобалау курсында жасалды. Кен денесінің геометриясы мен тау жынысы бойынша 10 жерасты әдісін ранжирлейді.",
+        techStack: ["Next.js", "TypeScript", "Nicholas 1981"],
+        link: { href: "https://github.com/yerkebulat/ubc-mining-method-selector" },
+      },
+    ],
   },
   ru: {
     ...RESUME_DATA,
@@ -657,6 +676,15 @@ export const LOCALIZED_RESUME_DATA = {
         award: "$4594, август 2022",
       },
     ],
+    projects: [
+      {
+        title: "UBC Mining Method Selector",
+        description:
+          "Веб-приложение таблицы выбора метода Nicholas (1981) / UBC. Сделано в курсе MINE 306 Underground Mining Systems and Design у проф. Fidelis Suorineni. Ранжирует десять подземных методов по геометрии залежи и качеству массива.",
+        techStack: ["Next.js", "TypeScript", "Nicholas 1981"],
+        link: { href: "https://github.com/yerkebulat/ubc-mining-method-selector" },
+      },
+    ],
   },
 } satisfies Record<ResumeLanguage, ResumeData>;
 
@@ -677,7 +705,7 @@ export const RESUME_LABELS = {
       education: "Education",
       skills: "Skills",
       awards: "Awards & Achievements",
-      projects: "Side projects",
+      projects: "Projects",
     },
     present: "Present",
     to: "to",
