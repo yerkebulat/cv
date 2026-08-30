@@ -130,7 +130,7 @@ export const RESUME_DATA: ResumeData = {
   work: [
     {
       company: "Glencore — Kazzinc",
-      link: "https://www.kazzinc.com",
+      link: "https://www.kazzinc.com/eng/o-proizvodstve/predpriyatiya/ao-altyntau-kokshetau",
       badges: ["Upcoming", "Internship", "Mine Planning"],
       title: "Mine Planning Engineer",
       logo: null,
@@ -140,8 +140,8 @@ export const RESUME_DATA: ResumeData = {
         <>
           <ul className="list-inside list-disc">
             <li>
-              Incoming one-month placement at Kazzinc in Kokshetau: mine planning
-              for the open-pit to underground transition.
+              Incoming one-month mine planning placement at Altyntau Kokshetau:
+              open-pit to underground transition.
             </li>
           </ul>
         </>
@@ -367,8 +367,8 @@ export const LOCALIZED_RESUME_DATA = {
         description: (
           <ul className="list-inside list-disc">
             <li>
-              2026 жылдың желтоқсанында Көкшетаудағы Kazzinc-те бір айлық
-              тағылымдама: ашық карьерден жерастыға көшуді жоспарлау.
+              2026 жылдың желтоқсанында Altyntau Kokshetau-да бір айлық тағылымдама:
+              ашық карьерден жерастыға көшуді жоспарлау.
             </li>
           </ul>
         ),
@@ -540,7 +540,7 @@ export const LOCALIZED_RESUME_DATA = {
         description: (
           <ul className="list-inside list-disc">
             <li>
-              Предстоящая месячная стажировка на предприятии Kazzinc в Кокшетау:
+              Предстоящая месячная стажировка на Altyntau Kokshetau:
               планирование перехода с открытых работ на подземные.
             </li>
           </ul>
