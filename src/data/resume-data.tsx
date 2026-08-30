@@ -99,7 +99,7 @@ export const RESUME_DATA: ResumeData = {
   location: "Astana, Kazakhstan",
   locationLink: "https://www.google.com/maps/place/Astana,+Kazakhstan",
   about:
-    "Junior mining engineering student with a minor in geology at Nazarbayev University. Experienced in core logging, geological mapping, geotechnical analysis, and fieldwork. Skilled in geological data analysis and passionate about mineral exploration. Two-time winner of the International Geography Olympiad (equivalent to the IMO in geography) and coach of the national geography team.",
+    "Senior mining engineering student with a minor in geology at Nazarbayev University. Experienced in core logging, geological mapping, geotechnical analysis, and fieldwork. Skilled in geological data analysis and passionate about mineral exploration. iGeo silver (Istanbul 2021) and bronze (Paris 2022); coach of the national geography team.",
   avatarUrl: "https://avatars.githubusercontent.com/u/151542580?v=4",
   personalWebsiteUrl: "https://yerkebulan.dev",
   contact: {
@@ -127,6 +127,26 @@ export const RESUME_DATA: ResumeData = {
     },
   ],
   work: [
+    {
+      company: "Glencore",
+      link: "https://www.glencore.com",
+      badges: ["Upcoming", "Internship", "Mine Planning"],
+      title: "Mine Planning Engineer",
+      logo: null,
+      start: "2026-12",
+      end: "2026-12",
+      description: (
+        <>
+          <ul className="list-inside list-disc">
+            <li>
+              Incoming one-month placement at the Kasing operation in Kokshetau,
+              Kazakhstan: mine planning for the open-pit to underground
+              transition.
+            </li>
+          </ul>
+        </>
+      ),
+    },
     {
       company: "Nazarbayev University",
       link: "https://nu.edu.kz",
@@ -168,10 +188,9 @@ export const RESUME_DATA: ResumeData = {
               world-class copper exploration project.
             </li>
             <li>
-              Completed a 3-month summer and 1-month winter internship 60 km
-              from the nearest village in remote field; responsible for facies
-              modeling, paleontological core description, and Chu-Sarysu basin
-              analysis.
+              Two separate internships (3-month summer and 1-month winter),
+              60 km from the nearest village; facies modeling, paleontological
+              core description, and Chu-Sarysu basin analysis.
             </li>
           </ul>
         </>
@@ -319,7 +338,7 @@ export const LOCALIZED_RESUME_DATA = {
     ...RESUME_DATA,
     location: "Астана, Қазақстан",
     about:
-      "Назарбаев Университетінде тау-кен инженериясын оқитын, геология бойынша миноры бар 3-курс студентімін. Керн сипаттау, геологиялық картаға түсіру, геотехникалық талдау және далалық жұмыстар бойынша тәжірибем бар. Геологиялық деректерді талдауға дағдыланғанмын және пайдалы қазбаларды барлауға қызығамын. Халықаралық география олимпиадасының екі мәрте жүлдегерімін және ұлттық география құрамасының жаттықтырушысымын.",
+      "Назарбаев Университетінде тау-кен инженериясын оқитын, геология бойынша миноры бар 4-курс студентімін. Керн сипаттау, геологиялық картаға түсіру, геотехникалық талдау және далалық жұмыстар бойынша тәжірибем бар. Геологиялық деректерді талдауға дағдыланғанмын және пайдалы қазбаларды барлауға қызығамын. iGeo күміс (Стамбұл 2021) және қола (Париж 2022); ұлттық география құрамасының жаттықтырушысымын.",
     education: [
       {
         school: "Назарбаев Университеті",
@@ -332,6 +351,19 @@ export const LOCALIZED_RESUME_DATA = {
     work: [
       {
         ...RESUME_DATA.work[0],
+        badges: ["Алдағы", "Тағылымдама", "Кенішті жоспарлау"],
+        title: "Кенішті жоспарлау инженері",
+        description: (
+          <ul className="list-inside list-disc">
+            <li>
+              2026 жылдың желтоқсанында Көкшетаудағы Glencore Kasing кенішінде
+              бір айлық тағылымдама: ашық карьерден жерастыға көшуді жоспарлау.
+            </li>
+          </ul>
+        ),
+      },
+      {
+        ...RESUME_DATA.work[1],
         company: "Назарбаев Университеті",
         badges: ["Толық емес жұмыс", "Зерттеу"],
         title: "Зерттеу ассистенті",
@@ -350,7 +382,7 @@ export const LOCALIZED_RESUME_DATA = {
         ),
       },
       {
-        ...RESUME_DATA.work[1],
+        ...RESUME_DATA.work[2],
         badges: ["Тағылымдама", "Далалық геология"],
         title: "Далалық геолог",
         description: (
@@ -371,7 +403,7 @@ export const LOCALIZED_RESUME_DATA = {
         ),
       },
       {
-        ...RESUME_DATA.work[2],
+        ...RESUME_DATA.work[3],
         badges: ["Толық емес жұмыс", "Стартап", "Тау-кен", "AI"],
         title: "Техникалық команда мүшесі",
         description: (
@@ -392,7 +424,7 @@ export const LOCALIZED_RESUME_DATA = {
         ),
       },
       {
-        ...RESUME_DATA.work[3],
+        ...RESUME_DATA.work[4],
         company: "Дарын РҒПО",
         badges: ["Еріктілік", "Ұлттық құрама жаттықтырушысы", "Қазылар алқасы"],
         title: "Ұлттық құрама жаттықтырушысы және қазылар алқасының мүшесі",
@@ -413,7 +445,7 @@ export const LOCALIZED_RESUME_DATA = {
         ),
       },
       {
-        ...RESUME_DATA.work[4],
+        ...RESUME_DATA.work[5],
         badges: ["Тағылымдама", "Аударма"],
         title: "Аудармашы",
         description: (
@@ -469,7 +501,7 @@ export const LOCALIZED_RESUME_DATA = {
     ...RESUME_DATA,
     location: "Астана, Казахстан",
     about:
-      "Студент третьего курса программы B.Sc. по горному делу с minor по геологии в Назарбаев Университете. Имею опыт описания керна, геологического картирования, геотехнического анализа и полевых работ. Уверенно работаю с геологическими данными и интересуюсь разведкой полезных ископаемых. Двукратный призер Международной географической олимпиады и тренер национальной сборной по географии.",
+      "Студент четвертого курса программы B.Sc. по горному делу с minor по геологии в Назарбаев Университете. Имею опыт описания керна, геологического картирования, геотехнического анализа и полевых работ. Уверенно работаю с геологическими данными и интересуюсь разведкой полезных ископаемых. Призер iGeo: серебро (Стамбул 2021) и бронза (Париж 2022); тренер национальной сборной по географии.",
     education: [
       {
         school: "Назарбаев Университет",
@@ -482,6 +514,19 @@ export const LOCALIZED_RESUME_DATA = {
     work: [
       {
         ...RESUME_DATA.work[0],
+        badges: ["Предстоит", "Стажировка", "Планирование горных работ"],
+        title: "Инженер по планированию горных работ",
+        description: (
+          <ul className="list-inside list-disc">
+            <li>
+              Предстоящая месячная стажировка на предприятии Glencore Kasing в
+              Кокшетау: планирование перехода с открытых работ на подземные.
+            </li>
+          </ul>
+        ),
+      },
+      {
+        ...RESUME_DATA.work[1],
         company: "Назарбаев Университет",
         badges: ["Неполная занятость", "Исследования"],
         title: "Ассистент исследователя",
@@ -499,7 +544,7 @@ export const LOCALIZED_RESUME_DATA = {
         ),
       },
       {
-        ...RESUME_DATA.work[1],
+        ...RESUME_DATA.work[2],
         badges: ["Стажировка", "Полевая геология"],
         title: "Полевой геолог",
         description: (
@@ -521,7 +566,7 @@ export const LOCALIZED_RESUME_DATA = {
         ),
       },
       {
-        ...RESUME_DATA.work[2],
+        ...RESUME_DATA.work[3],
         badges: ["Неполная занятость", "Стартап", "Горное дело", "AI"],
         title: "Member of Technical Staff",
         description: (
@@ -541,7 +586,7 @@ export const LOCALIZED_RESUME_DATA = {
         ),
       },
       {
-        ...RESUME_DATA.work[3],
+        ...RESUME_DATA.work[4],
         company: "Дарын РНПЦ",
         badges: ["Волонтерство", "Тренер национальной сборной", "Жюри"],
         title: "Тренер национальной сборной и член жюри",
@@ -562,7 +607,7 @@ export const LOCALIZED_RESUME_DATA = {
         ),
       },
       {
-        ...RESUME_DATA.work[4],
+        ...RESUME_DATA.work[5],
         badges: ["Стажировка", "Перевод"],
         title: "Переводчик",
         description: (
