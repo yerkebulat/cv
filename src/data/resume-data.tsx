@@ -139,8 +139,8 @@ export const RESUME_DATA: ResumeData = {
         <>
           <ul className="list-inside list-disc">
             <li>
-              Incoming one-month placement at Kazzinc's Kasing operation in Kokshetau:
-              mine planning for the open-pit to underground transition.
+              Incoming one-month placement at Kazzinc in Kokshetau: mine planning
+              for the open-pit to underground transition.
             </li>
           </ul>
         </>
@@ -355,8 +355,8 @@ export const LOCALIZED_RESUME_DATA = {
         description: (
           <ul className="list-inside list-disc">
             <li>
-              2026 жылдың желтоқсанында Көкшетаудағы Kazzinc Kasing кенішінде
-              бір айлық тағылымдама: ашық карьерден жерастыға көшуді жоспарлау.
+              2026 жылдың желтоқсанында Көкшетаудағы Kazzinc-те бір айлық
+              тағылымдама: ашық карьерден жерастыға көшуді жоспарлау.
             </li>
           </ul>
         ),
@@ -518,8 +518,8 @@ export const LOCALIZED_RESUME_DATA = {
         description: (
           <ul className="list-inside list-disc">
             <li>
-              Предстоящая месячная стажировка на предприятии Kazzinc (Kasing) в
-              Кокшетау: планирование перехода с открытых работ на подземные.
+              Предстоящая месячная стажировка на предприятии Kazzinc в Кокшетау:
+              планирование перехода с открытых работ на подземные.
             </li>
           </ul>
         ),
