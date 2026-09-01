@@ -334,6 +334,14 @@ export const RESUME_DATA: ResumeData = {
   ],
   projects: [
     {
+      title: "Geo Shift Handover",
+      description:
+        "Offline-first handover app for exploration drilling geologists",
+      techStack: ["Vite", "JavaScript", "PWA"],
+      link: { href: "https://yerkebulat.github.io/geo-shift-handover/" },
+      github: { href: "https://github.com/yerkebulat/geo-shift-handover" },
+    },
+    {
       title: "UBC Mining Method Selector",
       description:
         "Web app of the Nicholas (1981) / UBC method-selection spreadsheet. Built for MINE 306 Underground Mining Systems and Design with Prof. Fidelis Suorineni. Ranks ten underground methods from deposit geometry and rock-mass inputs.",
@@ -511,6 +519,14 @@ export const LOCALIZED_RESUME_DATA = {
     ],
     projects: [
       {
+        title: "Geo Shift Handover",
+        description:
+          "Барлау бұрғылау геологтарына арналған, офлайн жұмыс істейтін ауысым тапсыру қосымшасы",
+        techStack: ["Vite", "JavaScript", "PWA"],
+        link: { href: "https://yerkebulat.github.io/geo-shift-handover/" },
+        github: { href: "https://github.com/yerkebulat/geo-shift-handover" },
+      },
+      {
         title: "UBC Mining Method Selector",
         description:
           "Nicholas (1981) / UBC кен қазу әдісін таңдау кестесінің веб-қосымшасы. Prof. Fidelis Suorineni-мен MINE 306 Жерасты кен қазу жүйелері және жобалау курсында жасалды. Кен денесінің геометриясы мен тау жынысы бойынша 10 жерасты әдісін ранжирлейді.",
@@ -683,6 +699,14 @@ export const LOCALIZED_RESUME_DATA = {
       },
     ],
     projects: [
+      {
+        title: "Geo Shift Handover",
+        description:
+          "Офлайн-приложение для передачи смены геологам разведочного бурения",
+        techStack: ["Vite", "JavaScript", "PWA"],
+        link: { href: "https://yerkebulat.github.io/geo-shift-handover/" },
+        github: { href: "https://github.com/yerkebulat/geo-shift-handover" },
+      },
       {
         title: "UBC Mining Method Selector",
         description:
